@@ -1,6 +1,8 @@
-# diabete_intelligent
+# initGitlab
 
-
+## Notre Projet
+### Contexte du projet
+Nous voulons créer un site web basé sur un modèle Machine Learning dont le but est de prévoir si l'utilisateur est diabétique ou non, basé sur les informations qu'il renseigne sur le site (exemple :  sexe, taille, poids, pression sanguine, etc). Ce projet est lié au développemet durable car son objectif vise à assurer la santé et le bien-être de ses utilisateurs afin qu'il aient une vie plus saine.
 
 ## Getting started
 
@@ -15,14 +17,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.univ-lr.fr/projets-l2-2024/the-wolf-pack/diabete_intelligent.git
+git remote add origin https://gitlab.univ-lr.fr/projets-l2-2024/the-wolf-pack/initgitlab.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.univ-lr.fr/projets-l2-2024/the-wolf-pack/diabete_intelligent/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.univ-lr.fr/projets-l2-2024/the-wolf-pack/initgitlab/-/settings/integrations)
 
 ## Collaborate with your team
 
