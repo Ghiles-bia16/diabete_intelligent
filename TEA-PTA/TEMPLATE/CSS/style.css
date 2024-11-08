@@ -48,6 +48,7 @@ nav ul li #drapeau {
 }
 main {
   color: white;
+  margin-left: 10%;
 }
 main h2 {
 font-weight: bold;
@@ -58,9 +59,7 @@ width: 752px;
 height: 120px;
 
 }
-main {
-margin-left: 10%;
-}
+
 main .content div {
   margin-top:2%;
 
