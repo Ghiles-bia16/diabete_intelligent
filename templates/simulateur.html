@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="../CSS/simulateur.css">
+    <link rel="stylesheet" href="{{ url_for('static' , filename='css/simulateur.css') }}">
     
 </head>
 
@@ -18,11 +18,11 @@
     <header>
         <nav>
         <ul>
-          <li><img src="../../IMAGE/diabetes.png" alt="" id="logo"></li>
-        <li><a href="Acceuil.html">ACCEUIL</a></li>
-        <li><a href="simulateur.html">PRESTATION</a></li>
+          <li><img src="{{ url_for('static', filename='img/diabetes.png') }}" alt="" id="logo"></li>
+        <li><a href="{{ url_for('template', filename='Acceuil.html') }}">ACCEUIL</a></li>
+        <li><a href="{{ url_for('template', filename='simulateur.html') }}">PRESTATION</a></li>
         <li><a href="">CONTACT</a></li>
-        <li><img src="../../IMAGE/square_16150100.png" alt="" id="drapeau" >  FR</li>
+        <li><img src="{{ url_for('static', filename='img/square_16150100') }}" alt="" id="drapeau" >  FR</li>
         </ul>
         </nav>
         </header>
