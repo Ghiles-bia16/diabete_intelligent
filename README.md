@@ -1,5 +1,5 @@
 # Diabète Intelligent
-[](/static/img/diabetes.png)
+![Logo Diabète Intelligent](/static/img/diabetes.png)
 ## Notre Projet
 ### Contexte du projet
 Nous voulons créer un site web basé sur un modèle Machine Learning dont le but est de prévoir si l'utilisateur est diabétique ou non, basé sur les informations qu'il renseigne sur le site (exemple :  sexe, taille, poids, pression sanguine, etc). Ce projet est lié au développemet durable car son objectif vise à assurer la santé et le bien-être de ses utilisateurs afin qu'il aient une vie plus saine.
