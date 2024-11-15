@@ -24,8 +24,8 @@ git clone git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligen
 
 ## Crédits
 
-- [ ] [Yassine Oussama](git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligent.git)
-- [ ] [Bia Ghiles](git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligent.git)
-- [ ] [Gokmen Ilhan](git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligent.git)
-- [ ] [Khelf Massinissa](git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligent.git)
+- [ ] [Yassine Oussama](https://gitlab.univ-lr.fr/oyassine)
+- [ ] [Bia Ghiles](https://gitlab.univ-lr.fr/gbia)
+- [ ] [Gokmen Ilhan](https://gitlab.univ-lr.fr/igokmen)
+- [ ] [Khelf Massinissa](https://gitlab.univ-lr.fr/mkhelf)
 
