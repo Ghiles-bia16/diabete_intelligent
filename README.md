@@ -15,13 +15,23 @@ Nous voulons créer un site web basé sur un modèle Machine Learning dont le bu
 
 ```
 cd dossier_existant
-git clone git@gitlab.univ-lr.fr:projets-l2-2024/the-wolf-pack/diabete_intelligent.git
+git clone https://gitlab.univ-lr.fr/projets-l2-2024/the-wolf-pack/diabete_intelligent.git
+cd diabete_intelligent
 ```
 
 
 ## Utilisation
-
-
+    1/ Ouvrir le dossier FINALFLASK avec VS code
+    2/ Installer les modules python : pandas, flask, joblib, pickle et scikit-learn
+    ```
+    pip install pandas
+    pip install flask
+    pip install joblib
+    pip instal pickle
+    pip install scikit-learn
+    ```
+    3/ Exécuter le fichier app1.py
+    4/ Ouvrir le lien qui s'est affiché dans le terminal (ctrl + click)
 ## Crédits
 
 - [ ] [Yassine Oussama](https://gitlab.univ-lr.fr/oyassine)
