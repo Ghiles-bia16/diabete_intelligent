@@ -20,17 +20,23 @@ cd diabete_intelligent
 ```
 
 ## Utilisation
-    1/ Ouvrir le dossier FINALFLASK avec VS code
-    2/ Installer les modules python : pandas, flask, joblib, pickle et scikit-learn
-    ```bash
+- Ouvrir le dossier FINALFLASK avec VS code
+- Installer les modules python : pandas, flask, joblib, pickle et scikit-learn
+    
+   ``` 
     pip install pandas
     pip install flask
     pip install joblib
     pip install pickle
     pip install scikit-learn
     ```
-    3/ Exécuter le fichier app1.py
-    4/ Ouvrir le lien qui s'est affiché dans le terminal (ctrl + click)
+    ou directement grâce au fichier requirements.txt
+
+    ```
+    pip install -r requirements.txt
+    ```
+- Exécuter le fichier app1.py
+- Ouvrir le lien qui s'est affiché dans le terminal (ctrl + click)
 ## Crédits
 
 - [ ] [Yassine Oussama](https://gitlab.univ-lr.fr/oyassine)
