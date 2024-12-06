@@ -1,16 +1,17 @@
 body {
-    background-color:#B4B2C8;
-    font-family: "Montserrat", sans-serif;
+  background-color:#B4B2C8;
+  font-family: "Montserrat", sans-serif;
 }
 nav ul li {
 list-style: none;
- color:#1C2C37;
- text-align: center;
+color:#1C2C37;
+text-align: center;
 
 
 }
+
 nav {
- 
+
 background-color:rgba(255, 248, 248, 65%);
 border-radius: 10px;
 width:80%;
@@ -26,35 +27,65 @@ color:#1C2C37;
 
 } 
 nav ul {
-    display: flex;
-    justify-content:start;
-    padding-top:22px;
-    gap:14%;
-    font-family: "Inter", sans-serif;
-    font-weight:normal;
+  display: flex;
+  justify-content:start;
+  padding-top:22px;
+  gap:14%;
+  font-family: "Inter", sans-serif;
+  font-weight:normal;
 
 }
+.langue-principale {
+  width:50px;
+}
+.sous-menu li:hover {
+background-color:gainsboro;
+}
+nav ul .sous-menu {
+display: none;
+list-style: none;
+padding: 0;
+margin: 0;
+background-color: #f8f8f8;
+width:50px;
+gap: 3px;
+border-radius:3px;
+}
+nav ul li:hover  .sous-menu {
+display: block;
+}
 nav ul li #logo {
-  position: relative;
-  bottom: 14px;
-  height: 45px;
-  width: 45px;
+position: relative;
+bottom: 14px;
+height: 45px;
+width: 45px;
 
 }
 nav ul li #drapeau {
-  height: 12px;
-  width: 15px;
+height: 12px;
+width: 15px;
 
 }
 main {
   color: white;
   margin-left: 10%;
 }
+.effet-blur {
+  width:504px;
+  height:295px;
+  background-color:#FF5454;
+  border-radius:70%;
+  filter: blur(110px);
+  position:absolute;
+  left:-12%;
+  top:14%;
+  }
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 15%;
   
 } 
 .form-background {
@@ -78,6 +109,7 @@ h4 {
   text-align: center;
   font-size: 1.4em;
 }
+
 .allignement {
 display: flex; 
 justify-content: space-between;
@@ -93,17 +125,22 @@ padding-bottom:20px;
   text-align: center;
   padding-bottom:50px;
 }
-input {
+input, main select {
   border: transparent;
   background-color:#D9D9D9;
   height:25px;
   border-radius:5px;
   outline:transparent;
+  
 }
 label {
-  font-size:0.8em;
+  font-size:0.9em;
+  font-weight:500;
 }
-.submit-button input {
+main select {
+  color : #1C2C37;
+}
+.submit-button input  {
   font-size:0.8em;
   background-color:#46ACCE;
   color: white;
@@ -112,5 +149,31 @@ label {
   border-radius:100px;
 
 }
+.last-row {
+  display: flex; 
+  justify-content: space-between;
+  gap:20px;
+}
 
- 
+.last-row div {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  padding-bottom:20px;
+}
+
+#langue-select {
+  border: none;
+  height:30px;
+  background-color:transparent;
+  outline: none;
+  
+}
+
+ main .image-right {
+  width:380px;
+  height:380px;
+position: relative;
+top: 50px;
+left:30px;
+}
