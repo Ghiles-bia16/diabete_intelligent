@@ -1,0 +1,113 @@
+body {
+    background-color:#B4B2C8;
+    font-family: "Montserrat", sans-serif;
+}
+nav ul li {
+list-style: none;
+ color:#1C2C37;
+ text-align: center;
+
+
+}
+nav {
+ 
+background-color:rgba(255, 248, 248, 65%);
+border-radius: 10px;
+width:80%;
+height:60px;
+margin-left:10%;
+margin-top:3%;
+
+}
+nav ul li a {
+
+text-decoration: none;
+color:#1C2C37; 
+
+} 
+nav ul {
+    display: flex;
+    justify-content:start;
+    padding-top:22px;
+    gap:14%;
+    font-family: "Inter", sans-serif;
+    font-weight:normal;
+
+}
+nav ul li #logo {
+  position: relative;
+  bottom: 14px;
+  height: 45px;
+  width: 45px;
+
+}
+nav ul li #drapeau {
+  height: 12px;
+  width: 15px;
+
+}
+main {
+  color: white;
+  margin-left: 10%;
+}
+main h2 {
+font-weight: bold;
+font-size:4em;
+line-height:60px;
+letter-spacing:5px;
+width: 752px;
+height: 120px;
+
+}
+
+main .content div {
+  margin-top:2%;
+
+}
+main div p {
+  font-size:1.1em;
+  width:700px;
+  letter-spacing:2px;
+  line-height:25px;
+}
+.content {
+  display: flex;
+  align-items: center; /* Aligne verticalement si nécessaire */
+  justify-content: space-between;
+}
+main img {
+  width:350px;
+  height:350px;
+position: relative;
+top: 50px;
+
+}
+
+main input {
+  width:320px;
+  height:70px;
+  border-radius:100px;
+  background-color:#D9D9D9;
+  color:black;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family:"Montserrat", sans-serif;
+border: transparent;
+
+margin-top: 1%;
+}
+.Blur-effect {
+  width:504px;
+  height:295px;
+  background-color:#FF5454;
+  border-radius:70%;
+  filter: blur(110px);
+  position:absolute;
+  left:-12%;
+  top:14%;
+}
+main input:hover {
+  background-color:#ED8383;
+ 
+  color:white;
+}
