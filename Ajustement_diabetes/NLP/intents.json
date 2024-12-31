@@ -1,0 +1,191 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Salut",
+        "Bonjour",
+        "Comment ca va ?",
+        "Il y a quelqu'un ?",
+        "Bonsoir",
+        "Bonne journee"
+      ],
+      "responses": [
+        "Salut ! :)",
+        "Bonjour, merci de visiter notre site",
+        "Bonjour, comment puis-je vous aider ?",
+        "Salut, en quoi puis-je vous etre utile ?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Au revoir",
+        "A bientot",
+        "Bonne journee"
+      ],
+      "responses": [
+        "A bientot, merci de votre visite",
+        "Bonne journee, prenez soin de vous",
+        "Au revoir ! Revenez nous voir bientot."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Merci",
+        "Merci beaucoup",
+        "Merci pour votre aide"
+      ],
+      "responses": [
+        "De rien !",
+        "Je suis la pour vous aider.",
+        "Pas de probleme, c'est mon travail."
+      ]
+    },
+    {
+      "tag": "symptoms",
+      "patterns": [
+        "Quels sont les symptomes du diabetes ",
+        "Comment savoir si j'ai du diabetes ",
+        "Quels signes peuvent indiquer un diabetes "
+      ],
+      "responses": [
+        "Les symptomes courants du diabetes incluent une soif excessive, des mictions frequentes, de la fatigue, et une perte de poids inexpliquee.",
+        "Les signes du diabetes comprennent une vision floue, des infections frequentes, et une guerison lente des plaies."
+      ]
+    },
+    {
+      "tag": "prevention",
+      "patterns": [
+        "Comment prevenir le diabetes ",
+        "Que puis-je faire pour eviter le diabetes ",
+        "Y a-t-il des moyens de prevenir le diabetes "
+      ],
+      "responses": [
+        "La prevention du diabetes inclut une alimentation equilibree, de l'exercice physique regulier, et le maintien d'un poids sante.",
+        "Eviter une alimentation riche en sucres et en graisses, et pratiquer une activite physique regulierement, sont des mesures preventives efficaces."
+      ]
+    },
+    {
+      "tag": "treatment",
+      "patterns": [
+        "Comment traite-t-on le diabetes ",
+        "Quels traitements existent pour le diabetes ",
+        "Le diabetes se guerit-il ?"
+      ],
+      "responses": [
+        "Le diabetes est souvent traite par des medicaments, des changements de mode de vie, ou par de l'insuline (pour le diabetes de type 1).",
+        "Le traitement du diabetes peut inclure des medicaments oraux, des changements alimentaires, et un suivi regulier de la glycemie."
+      ]
+    },
+    {
+      "tag": "complications",
+      "patterns": [
+        "Quels sont les risques et complications du diabetes ",
+        "Le diabetes peut-il entrainer des problemes de sante graves ",
+        "Quelles complications peut entrainer le diabetes "
+      ],
+      "responses": [
+        "Le diabetes non controle peut entrainer des complications telles que des maladies cardiaques, des troubles renaux, des problemes de vue, et des neuropathies.",
+        "Les complications graves du diabetes incluent les AVC, la cecite, et les amputations dues a une mauvaise circulation sanguine."
+      ]
+    },
+    {
+      "tag": "diet",
+      "patterns": [
+        "Quel regime suivre en cas de diabetes ",
+        "Que dois-je manger si j'ai du diabetes ",
+        "Quels aliments sont a eviter quand on a du diabetes "
+      ],
+      "responses": [
+        "Les personnes diabetiques doivent privilegier une alimentation riche en fibres, en legumes, en proteines maigres, et eviter les sucres rapides.",
+        "Il est recommande d'eviter les aliments riches en sucres raffines, en gras satures, et de limiter les glucides simples."
+      ]
+    },
+    {
+      "tag": "blood_sugar",
+      "patterns": [
+        "Qu'est-ce que la glycemie ",
+        "Que signifie un taux de sucre eleve dans le sang ",
+        "Quel est le taux normal de sucre dans le sang "
+      ],
+      "responses": [
+        "La glycemie est la concentration de glucose (sucre) dans le sang. Elle est mesuree pour surveiller le diabetes.",
+        "Un taux normal de sucre dans le sang a jeun se situe entre 70 et 100 mg/dL. Un taux plus eleve peut indiquer un diabetes."
+      ]
+    },
+    {
+      "tag": "exercise",
+      "patterns": [
+        "Est-ce que l'exercice aide a controler le diabetes ",
+        "Quel type d'exercice est bon pour les diabetiques ",
+        "Combien d'exercice faut-il faire en cas de diabetes "
+      ],
+      "responses": [
+        "L'exercice aide a reguler la glycemie en ameliorant la sensibilite a l'insuline. Il est recommande de pratiquer une activite moderee 150 minutes par semaine.",
+        "Les exercices aerobiques comme la marche, le velo, ou la natation sont particulierement benefiques pour les personnes diabetiques."
+      ]
+    },
+    {
+      "tag": "medicaments",
+      "patterns": [
+         "Donne moi un medicament",
+         "Propose un medicament sur le diabete"
+      ],
+      "responses": [
+        "Je suis un chatbot cree par le Wolfpack. Pour des informations sur les medicaments,Consultez un professionnel de santé via [Doctolib](https://www.doctolib.fr)."
+      ]
+    },
+    {
+      "tag": "insuline",
+      "patterns": [
+        "c'est quoi  l'insuline",
+        "c quoi l'insuline",
+        "Comment fonctionne l'insuline",
+        "A quoi sert l'insuline"
+      ],
+      "responses": [
+        "L'insuline est une hormone produite par le pancreas qui permet de reguler la glycemie en facilitant l'absorption du glucose par les cellules.",
+        "L'insuline est essentielle pour le traitement du diabetes de type 1, car les personnes atteintes de cette maladie ne produisent pas d'insuline."
+      ]
+    },
+    {
+      "tag": "type1",
+      "patterns": [
+        "Qu'est-ce que le diabetes de type 1",
+        "Quelles sont les differences entre le diabetes de type 1 et de type 2",
+        "Le diabetes de type 1 est-il hereditaire"
+      ],
+      "responses": [
+        "Le diabetes de type 1 est une maladie auto-immune qui se caracterise par une destruction des cellules beta du pancreas, responsables de la production d'insuline.",
+        "Le diabetes de type 1 est different du diabetes de type 2 car il est souvent diagnostique chez les jeunes, necessite des injections d'insuline, et n'est pas lie a l'obesite.",
+        "Le diabetes de type 1 a une composante genetique, mais d'autres facteurs environnementaux peuvent egalement jouer un role dans son developpement."
+      ]
+    },
+    {
+      "tag": "type2",
+      "patterns": [
+        "Qu'est-ce que le diabetes de type 2",
+        "Quelles sont les differences entre le diabetes de type 1 et de type 2",
+        "Le diabetes de type 2 est-il hereditaire"
+      ],
+      "responses": [
+        "Le diabetes de type 2 est une maladie chronique caracterisee par une resistance a l'insuline et une production insuffisante d'insuline par le pancreas.",
+        "Le diabetes de type 2 est different du diabetes de type 1 car il est souvent diagnostique chez les adultes, peut etre traite par des medicaments oraux, et est souvent lie a l'obesite."
+      ]
+    },
+    {
+      "tag": "diabetes",
+      "patterns": [
+        "c quoi le diabetes",
+        "Quels sont les types de diabetes",
+        "Le diabetes est-il une maladie grave"
+      ],
+      "responses": [
+        "Le diabetes est une maladie chronique caracterisee par un taux eleve de sucre dans le sang. Il existe deux principaux types de diabetes : le diabetes de type 1 et le diabetes de type 2.",
+        "Le diabetes est une maladie grave qui peut entrainer des complications graves si elle n'est pas controlee. Il est important de suivre un traitement adequat et de surveiller regulierement sa glycemie."
+      ]
+    }
+  ]
+}
