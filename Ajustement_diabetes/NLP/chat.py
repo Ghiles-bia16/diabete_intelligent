@@ -7,10 +7,10 @@ from .model import NeuralNet
 from .nlp import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-with open(r"C:\Users\oussa\OneDrive\Desktop\FINALFLASK1\NLP\intents.json", 'r') as json_data:
+with open(r"C:\Users\oussa\OneDrive\Desktop\Ajustements_diabetes\NLP\intents.json", 'r') as json_data:
     intents = json.load(json_data)
 
-FILE = r"C:\Users\oussa\OneDrive\Desktop\FINALFLASK1\data.pth"
+FILE = r"C:\Users\oussa\OneDrive\Desktop\Ajustements_diabetes\data.pth"
 
 data = torch.load(FILE, weights_only=True) 
 
