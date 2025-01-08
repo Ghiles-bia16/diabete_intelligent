@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - smart diabeties"</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+          <div>
+        <li><img src="{{ url_for('static', filename='img/diabetes.png') }}" alt="" id="logo"></li>
+          </div>
+          
+         <li> <a href="#" id="menu-hamburger"><ion-icon name="menu"></ion-icon></a>  
+          <ul class="menu-hamburger ">
+          <a href="#" class="exit-menu "><ion-icon name="exit-outline"></ion-icon></a>
+        <li><a href="{{ url_for('home') }}">HOME</a></li>
+        <li><a href="{{ url_for('benefit') }}">BENEFIT</a></li>
+        <li><a href="{{url_for('FAQ_EN')}}">FAQ</a></li>
+      <li><a href="{{url_for('contact_en') }}">CONTACT</a></li> 
+  </ul></li>
+      <div class="langue-principale">
+          <li ><a href="#"><img src="{{ url_for('static', filename='img/square_13481941.png') }}" alt="" id="drapeau"> EN </a>
+             <ul class="sous-menu">
+              <li><a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='img/square_13481941.png') }}" alt="" id="drapeau"> EN</a></li>
+              <li><a href="{{ url_for('accueil') }}"><img src="{{ url_for('static', filename='img/france.png') }}" alt="" id="drapeau"> FR</a></li>
+             </ul>
+        </li>
+        <ion-icon name="chevron-down-outline" id="down-arc"></ion-icon>
+        </div>
+        
+      </ul>
+      </nav>
+  </header>
+
+<main>
+  <p id="actual-page"> HOME ></p>
+  <div class="Blur-effect"></div>
+  <div class="content">
+    <div>
+        <h2>
+    SMART <br>
+    DIABETE 
+  </h2>
+  
+  <p>
+Diabetes, often silent, can lead to serious complications if not detected early. Our platform helps you know if you are at risk in a few simple steps. Take control of your health and get tested quickly to take action before symptoms appear.
+  </p> 
+    </div>
+  
+  <img src="{{ url_for('static', filename='img/blood-type_5548009.png') }}" alt="" class="image-right">
+  </div>
+  <a href="{{ url_for('benefit') }}"><input  type="submit" value="START !"></a>
+  </main>
+
+</body>
+<script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</html>

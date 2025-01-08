@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Diabète Intelligent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+        <div>
+      <li><img src="{{ url_for('static', filename='img/diabetes.png') }}" alt="" id="logo"></li>
+        </div>
+        
+       <li> <a href="#" id="menu-hamburger"><ion-icon name="menu"></ion-icon></a>  
+        <ul class="menu-hamburger ">
+        <a href="#" class="exit-menu "><ion-icon name="exit-outline"></ion-icon></a>
+      <li><a href="{{ url_for('accueil') }}">ACCUEIL</a></li>
+      <li><a href="{{ url_for('simulateur') }}">PRESTATION</a></li>
+      <li><a href="{{url_for('FAQ')}}">FAQ</a></li>
+    <li><a href="{{url_for('contacts')}}">CONTACT</a></li> 
+</ul></li>
+    <div class="langue-principale">
+        <li ><a href="#"><img src="{{ url_for('static', filename='img/france.png') }}" alt="" id="drapeau"> FR </a>
+           <ul class="sous-menu">
+            <li><a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='img/square_13481941.png') }}" alt="" id="drapeau"> EN</a></li>
+            <li><a href="{{ url_for('accueil') }}"><img src="{{ url_for('static', filename='img/france.png') }}" alt="" id="drapeau"> FR</a></li>
+           </ul>
+      </li>
+      <ion-icon name="chevron-down-outline" id="down-arc"></ion-icon>
+      </div>
+      
+    </ul>
+    </nav>
+</header>
+
+<main>
+            <div class="contact-container">
+              <div class="form-container">
+                <h3>Contact-Nous</h3>
+                <form action="" class="contact-form">
+                  <input type="text" placeholder="Votre Nom" checked>
+                  <input type="email" placeholder="Votre Email" checked>
+                  <textarea   placeholder="Laissez nous un message.."></textarea>
+                  <input type="submit"  value="envoyer" class="envoyer-btn">
+                </form>
+              </div>
+            
+              </div>    
+</main>
+</body>
+<script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</html>
