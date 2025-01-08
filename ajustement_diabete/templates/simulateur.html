@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur - Diabète Intelligent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/simulateur.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+              <div>
+            <li><img src="{{ url_for('static', filename='img/diabetes.png') }}" alt="" id="logo"></li>
+              </div>
+              
+             <li> <a href="#" id="menu-hamburger"><ion-icon name="menu"></ion-icon></a>  
+              <ul class="menu-hamburger ">
+              <a href="#" class="exit-menu "><ion-icon name="exit-outline"></ion-icon></a>
+            <li><a href="{{ url_for('accueil') }}">ACCUEIL</a></li>
+            <li><a href="{{ url_for('simulateur') }}">PRESTATION</a></li>
+            <li><a href="{{url_for('FAQ')}}">FAQ</a></li>
+          <li><a href="{{url_for('contacts')}}">CONTACT</a></li> 
+      </ul></li>
+          <div class="langue-principale">
+              <li ><a href="#"><img src="{{ url_for('static', filename='img/france.png') }}" alt="" id="drapeau"> FR </a>
+                 <ul class="sous-menu">
+                  <li><a href="{{url_for('home')}}"><img src="{{ url_for('static', filename='img/square_13481941.png') }}" alt="" id="drapeau"> EN</a></li>
+                  <li><a href="{{ url_for('accueil') }}"><img src="{{ url_for('static', filename='img/france.png') }}" alt="" id="drapeau"> FR</a></li>
+                 </ul>
+            </li>
+            <ion-icon name="chevron-down-outline" id="down-arc"></ion-icon>
+            </div>
+            
+          </ul>
+          </nav>
+      </header>
+    <main>
+        <p id="actual-page">PREDICTION ></p>
+        <div class="Blur-effect"></div>
+        <div class="container">
+            
+            <div class="form-background">
+                <form method="POST" action="{{ url_for('simulateur') }}">
+                    <h4>Vos informations - Complet</h4>
+                    
+                    <div class="allignement">
+                        <div>
+                            <label for="age">AGE</label>
+                            <input type="number" id="age" name="age" required>
+                        </div>
+                        <div>
+                            <label for="bmi">IMC</label>
+                            <input type="float" id="bmi" name="bmi" min="0" required>
+                        </div>
+                    </div>
+        
+                    <div class="allignement">
+                        <div>
+                            <label for="hypertension">HYPERTENSION</label>
+                            <input type="number" id="hypertension" name="hypertension" min="0" max="1" required>
+                        </div>
+                        <div>
+                            <label for="heart_disease">MALADIE CARDIAQUE</label>
+                            <input type="number" id="heart_disease" name="heart_disease" min="0" max="1" required>
+                        </div>
+                    </div>
+        
+                    <div class="allignement">
+                        <div>
+                            <label for="HbA1c_level">HbA1c LEVEL</label>
+                            <input type="float" id="HbA1c_level" name="HbA1c_level" required>
+                        </div>
+            
+                        <div>
+                            <label for="blood_glucose_level">NIVEAU DE GLYCÉMIE</label>
+                            <input type="float" id="blood_glucose_level" name="blood_glucose_level" required>
+                        </div>
+                    </div>
+        
+                    <div class="allignement">
+                        <div>
+                            <label for="gender">SEXE</label>
+                            <select id="gender" name="gender" required>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="smoking_history">HISTORIQUE TABAC</label>
+                            <select id="smoking_history" name="smoking_history" required>
+                                <option value="No Info">No Info</option>
+                                <option value="current">Current</option>
+                                <option value="ever">Ever</option>
+                                <option value="former">Former</option>
+                                <option value="never">Never</option>
+                                <option value="not current">Not Current</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="submit-button">
+                        <input type="submit" value="SIMULER">
+                    </div>
+                </form>
+                {% if prediction is not none %}
+                <p> {% if prediction == 1 %} Diabète {% else %} Non Diabétique {% endif %}</p>
+            {% endif %}
+            </div>
+
+           
+            <div class="form-background">
+                <form method="POST" action="{{ url_for('simulateur') }}">
+                    <h4>Vos informations - Simplifié</h4>
+                    
+                    <div class="allignement">
+                        <div>
+                            <label for="age2">AGE</label>
+                            <input type="number" id="age2" name="age" required>
+                        </div>
+                        <div>
+                            <label for="bmi2">IMC</label>
+                            <input type="float" id="bmi2" name="bmi" min="0" required>
+                        </div>
+                    </div>
+        
+                    <div class="allignement">
+                        <div>
+                            <label for="hypertension2">HYPERTENSION</label>
+                            <input type="number" id="hypertension2" name="hypertension" min="0" max="1" required>
+                        </div>
+                        <div>
+                            <label for="heart_disease2">MALADIE CARDIAQUE</label>
+                            <input type="number" id="heart_disease2" name="heart_disease" min="0" max="1" required>
+                        </div>
+                    </div>
+        
+                    <div class="allignement">
+                        <div>
+                            <label for="gender2">SEXE</label>
+                            <select id="gender2" name="gender" required>
+                                <option value="Female">Female</option>
+                                <option value="Male">Male</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="smoking_history2">HISTORIQUE TABAC</label>
+                            <select id="smoking_history2" name="smoking_history" required>
+                                <option value="No Info">No Info</option>
+                                <option value="current">Current</option>
+                                <option value="ever">Ever</option>
+                                <option value="former">Former</option>
+                                <option value="never">Never</option>
+                                <option value="not current">Not Current</option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="submit-button">
+                        <input type="submit" value="SIMULER">
+                    </div>
+                </form>
+                {% if prediction_simple is not none %}
+                <p> {% if prediction_simple == 1 %} Diabète {% else %} Non Diabétique {% endif %}</p>
+            {% endif %}
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class=" downfoot">© 2024 Diabète Intelligent</p>
+    </footer>
+</body>
+<script src="{{ url_for('static', filename='script/script.js') }}"></script>
+</html>

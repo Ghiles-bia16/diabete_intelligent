@@ -1,0 +1,192 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hello",
+          "How are you?",
+          "Is anyone there?",
+          "Good evening",
+          "Good morning"
+        ],
+        "responses": [
+          "Hi there! :)",
+          "Hello, thank you for visiting our site",
+          "Hello, how can I help you?",
+          "Hi, how can I assist you today?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Goodbye",
+          "See you soon",
+          "Have a nice day"
+        ],
+        "responses": [
+          "See you soon, thank you for visiting",
+          "Have a great day, take care",
+          "Goodbye! Come back to see us soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thank you",
+          "Thanks a lot",
+          "Thanks for your help"
+        ],
+        "responses": [
+          "You're welcome!",
+          "I'm here to help.",
+          "No problem, that's my job."
+        ]
+      },
+      {
+        "tag": "symptoms",
+        "patterns": [
+          "What are the symptoms of diabetes?",
+          "How can I tell if I have diabetes?",
+          "What signs might indicate diabetes?"
+        ],
+        "responses": [
+          "Common symptoms of diabetes include excessive thirst, frequent urination, fatigue, and unexplained weight loss.",
+          "Signs of diabetes include blurred vision, frequent infections, and slow wound healing."
+        ]
+      },
+      {
+        "tag": "prevention",
+        "patterns": [
+          "How can I prevent diabetes?",
+          "What can I do to avoid diabetes?",
+          "Are there ways to prevent diabetes?"
+        ],
+        "responses": [
+          "Preventing diabetes includes a balanced diet, regular exercise, and maintaining a healthy weight.",
+          "Avoiding a diet high in sugars and fats and practicing regular physical activity are effective preventive measures."
+        ]
+      },
+      {
+        "tag": "treatment",
+        "patterns": [
+          "How is diabetes treated?",
+          "What treatments are available for diabetes?",
+          "Can diabetes be cured?"
+        ],
+        "responses": [
+          "Diabetes is often treated with medications, lifestyle changes, or insulin (for type 1 diabetes).",
+          "Treatment for diabetes may include oral medications, dietary changes, and regular blood sugar monitoring."
+        ]
+      },
+      {
+        "tag": "complications",
+        "patterns": [
+          "What are the risks and complications of diabetes?",
+          "Can diabetes lead to serious health problems?",
+          "What complications can diabetes cause?"
+        ],
+        "responses": [
+          "Uncontrolled diabetes can lead to complications such as heart disease, kidney disorders, vision problems, and neuropathy.",
+          "Serious complications of diabetes include strokes, blindness, and amputations due to poor blood circulation."
+        ]
+      },
+      {
+        "tag": "diet",
+        "patterns": [
+          "What diet should I follow if I have diabetes?",
+          "What should I eat if I have diabetes?",
+          "What foods should be avoided with diabetes?"
+        ],
+        "responses": [
+          "People with diabetes should focus on a diet high in fiber, vegetables, lean proteins, and avoid fast sugars.",
+          "It's recommended to avoid foods high in refined sugars, saturated fats, and limit simple carbohydrates."
+        ]
+      },
+      {
+        "tag": "blood_sugar",
+        "patterns": [
+          "What is blood sugar?",
+          "What does high blood sugar mean?",
+          "What is the normal blood sugar level?"
+        ],
+        "responses": [
+          "Blood sugar is the concentration of glucose (sugar) in the blood. It's measured to monitor diabetes.",
+          "A normal fasting blood sugar level ranges from 70 to 100 mg/dL. Higher levels may indicate diabetes."
+        ]
+      },
+      {
+        "tag": "exercise",
+        "patterns": [
+          "Does exercise help control diabetes?",
+          "What type of exercise is good for diabetics?",
+          "How much exercise should one do with diabetes?"
+        ],
+        "responses": [
+          "Exercise helps regulate blood sugar by improving insulin sensitivity. Moderate activity for 150 minutes per week is recommended.",
+          "Aerobic exercises like walking, cycling, or swimming are particularly beneficial for people with diabetes."
+        ]
+      },
+      {
+        "tag": "medications",
+        "patterns": [
+          "Suggest a medication for diabetes",
+          "Give me a diabetes medicine"
+        ],
+        "responses": [
+          "I am a chatbot created by the Wolfpack. For information on medications, consult a healthcare professional via [Doctolib](https://www.doctolib.fr)."
+        ]
+      },
+      {
+        "tag": "insulin",
+        "patterns": [
+          "What is insulin?",
+          "What does insulin do?",
+          "How does insulin work?",
+          "What is insulin used for?"
+        ],
+        "responses": [
+          "Insulin is a hormone produced by the pancreas that helps regulate blood sugar by facilitating glucose absorption by cells.",
+          "Insulin is essential for treating type 1 diabetes, as people with this condition do not produce insulin."
+        ]
+      },
+      {
+        "tag": "type1",
+        "patterns": [
+          "What is type 1 diabetes?",
+          "What are the differences between type 1 and type 2 diabetes?",
+          "Is type 1 diabetes hereditary?"
+        ],
+        "responses": [
+          "Type 1 diabetes is an autoimmune disease characterized by the destruction of the pancreas' beta cells, which produce insulin.",
+          "Type 1 diabetes differs from type 2 diabetes as it is often diagnosed in young people, requires insulin injections, and is not linked to obesity.",
+          "Type 1 diabetes has a genetic component, but other environmental factors may also play a role in its development."
+        ]
+      },
+      {
+        "tag": "type2",
+        "patterns": [
+          "What is type 2 diabetes?",
+          "What are the differences between type 1 and type 2 diabetes?",
+          "Is type 2 diabetes hereditary?"
+        ],
+        "responses": [
+          "Type 2 diabetes is a chronic condition characterized by insulin resistance and insufficient insulin production by the pancreas.",
+          "Type 2 diabetes differs from type 1 diabetes as it is often diagnosed in adults, can be treated with oral medications, and is often linked to obesity."
+        ]
+      },
+      {
+        "tag": "diabetes",
+        "patterns": [
+          "What is diabetes?",
+          "What types of diabetes exist?",
+          "Is diabetes a serious illness?"
+        ],
+        "responses": [
+          "Diabetes is a chronic condition characterized by high blood sugar levels. There are two main types: type 1 and type 2 diabetes.",
+          "Diabetes is a serious illness that can lead to severe complications if uncontrolled. It's important to follow proper treatment and regularly monitor blood sugar."
+        ]
+      }
+    ]
+  }
+  

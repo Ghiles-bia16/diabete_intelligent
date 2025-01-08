@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+      background-color:#B4B2C8;
+      font-family: "Montserrat", sans-serif;
+  }
+  nav ul li {
+   list-style: none;
+   color:#1C2C37;
+   text-align: center;
+  }
+  nav {
+  
+  background-color:rgba(255, 248, 248, 65%);
+  border-radius: 10px;
+  width:86%;
+  height:50px;
+  margin-left:7%;
+  margin-top:1%;
+  
+  }
+  nav ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  color:#1C2C37; 
+  
+  } 
+  nav  ul{
+      height: 100%;
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      font-family: "Inter", sans-serif;
+      font-weight:normal;
+      padding: 0 4%;
+  }
+  #menu-hamburger {
+    display: none;
+  }
+  .exit-menu {
+    display: none;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  .exit-menu ion-icon {
+    font-size: 30px;
+  }
+  .menu-hamburger {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 35%;
+    justify-content:center;
+    align-items: center;
+  
+  }
+   .langue-principale {
+    position: relative;
+    height: 100%;
+    width:75px;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+  }
+  ion-icon {
+  font-size: 13px;
+  }
+  
+   .sous-menu {
+     display: none;
+    list-style: none;
+    position: absolute;
+  } 
+  .sous-menu li {
+    background-color:#f8f8f8;
+  }
+  nav ul .sous-menu-active {
+    display: block;
+    width: 50px;
+  }
+  .sous-menu-active li:hover {
+    background-color: rgba(0,0,0, 0.2);
+  }
+  nav ul li #logo {
+    height: 35px;
+    width: 35px;
+  }
+  nav ul li #drapeau {
+    height: 12px;
+    width: 15px;
+  
+  }
+  
+  
+main{
+     margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+  
+  }
+  
+  .contact-container{
+   
+    margin: auto;
+    width:40%;
+    min-width: 250px;
+    background-color: #e6e5e7;
+    box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+    border-radius: 0.5 rem;
+    overflow: hidden;
+    border-radius:10px;
+  }
+  
+  .form-container{
+    padding: 20px;
+  }
+  .form-container h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .contact-form { 
+    display: grid;
+    row-gap: 1rem;
+  }
+  
+  .contact-form input, 
+  .contact-form textarea{
+    width: 100%;
+    border: none;
+    outline:none;
+    background:whitesmoke;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #000000;
+    border-radius: 0.4rem;
+  }
+  
+  
+  .contact-form textarea{
+    resize: none;
+    height: 200px;
+  }
+  
+  
+  .contact-form .envoyer-btn{
+    border: none;
+    outline: none;
+    background:#46ACCE; 
+    font-size:500 ;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+  }
+ 
+  @media screen and (max-width:950px) {
+    #menu-hamburger  {
+      display: block;
+      
+    }
+    #menu-hamburger ion-icon {
+      font-size: 30px;
+    }
+    .menu-hamburger {
+      display: none;
+     flex-direction: column;
+     position: absolute;
+     top: 0;
+     left: 0;
+     gap:20%;
+     width: 100%;
+     height: 100vh;
+     background-color: rgba(255, 248, 248);
+    }
+    .langue-principale {
+      display: none;
+      
+    }
+   
+    .langue-principale-active {
+      display: flex;
+      position:absolute;
+      left:80%;
+    }
+    .menu-hamburger-active {
+     display: flex;
+     overflow-y:auto;
+    }
+    .exit-menu-active {
+      display:block;
+    }
+    .container {
+      flex-direction: column;
+    }
+    .form-background {
+      width: 80%;
+    }
+     .no-scroll {
+        overflow: hidden; 
+        height: 100%; 
+    }
+  }
+  @media screen and (max-width:450px ) {
+   .contact-container {
+    width:80%;
+   }
+  }
