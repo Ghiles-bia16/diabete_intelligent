@@ -29,6 +29,7 @@ cd diabete_intelligent
     pip install joblib
     pip install pickle
     pip install scikit-learn
+    pip install torch
     ```
     ou directement grâce au fichier requirements.txt
 
